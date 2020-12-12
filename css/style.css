@@ -161,12 +161,13 @@ span.m-left{
   z-index: 1;
 }
 
-a.about-me-info p{
+.about-me-info p {
   font-size: 1.3rem;
   color: #BEBEBE;
 }
 
 .about-me-info p:nth-child(2),
+.about-me-info p:nth-child(3),
 .about-me-info p:last-child{
   margin-top: 30px;
 }
@@ -212,7 +213,7 @@ a.about-me-info p{
 
 div[class^='tag-'] {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-  width: 120px;
+  width: 200px;
   height: 30px;
   background-color: #1758A7;
   margin-right: 30px;
