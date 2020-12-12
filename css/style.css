@@ -288,6 +288,17 @@ button.active{
 .work a img{
     width: 350px;
     justify-self: center;
+    cursor: zoom-in;
+    -webkit-transition: all .4s ease-in;
+}
+.work a img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+
+}
+
+.fullSize {
+  width: 900px;
 }
 
 div.hideCategory{
