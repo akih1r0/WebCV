@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -14,7 +14,7 @@
     <div class="container navbar">
         <header>
             <div class="lgo">
-                <h1>Bohdan i Maksym</h1>
+                <h1>Bohdan and Maksym</h1>
             </div>
 
             <nav>
@@ -30,8 +30,8 @@
     <div class="container main-info-section">
         <div class="text">
             <h1>
-                <span>H</span>
-                <span class="m-left">i</span>
+                <span class="animated bounce">H</span>
+                <span class="m-left animated bounce">i</span>
                 <span class="m-left">,</span>
                 <br>
                 <span>W</span>
@@ -131,9 +131,9 @@
     <div class="container work" id="work">
         <h1>Work</h1>
         <div class="work-category">
-            <button id="designing" class="active" onclick="showRequiredCategory(this)">Android Apps</button>
-            <button id="animation" onclick="showRequiredCategory(this)">Games</button>
-            <button id="project" onclick="showRequiredCategory(this)">C# with Leszek sensei</button>
+            <button id="designing" class="active" onclick="showRequiredCategory(this)">Web Designing</button>
+            <button id="animation" onclick="showRequiredCategory(this)">Web Animation</button>
+            <button id="project" onclick="showRequiredCategory(this)">React Projects</button>
         </div>
         <div class="category-designing showCategory">
             <a href="img/1.png" data-lightbox="android"><img src="img/1.png" id="img1"></a>
@@ -157,11 +157,11 @@
 
     <div class="container contact" id="contact">
         <h1>Contact</h1>
-        <form>
+        <form action="addmessage.php" method="POST">
             <input type="text" name="name" placeholder="Full name">
-            <input type="email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email">
             <input type="email" placeholder="bzaiche1@vistula.edu.pl" disabled>
-            <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea name="content" cols="30" rows="10" placeholder="Message"></textarea>
             <input type="submit">
         </form>
     </div>
@@ -172,7 +172,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/animation.gsap.min.js"></script>
     <script src="js/TimelineLite.min.js"></script>
