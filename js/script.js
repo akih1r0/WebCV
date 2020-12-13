@@ -6,17 +6,17 @@ spans.forEach(span => span.addEventListener('mouseout', function (e) {
     span.classList.remove('animated', 'rubberBand')
 }))
 
+const androidBar = document.querySelector('.bar-android')
+const unityBar = document.querySelector('.bar-unity')
 const htmlBar = document.querySelector('.bar-html')
-const cssBar = document.querySelector('.bar-css')
-const jsBar = document.querySelector('.bar-javascript')
-const reactBar = document.querySelector('.bar-react')
+const designBar = document.querySelector('.bar-design')
 
 var t1 = new TimelineLite()
 
-t1.fromTo(htmlBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(70% - 6px)` , ease: Power4.easeOut})
-    .fromTo(cssBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(60% - 6px)` , ease: Power4.easeOut})
-    .fromTo(jsBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(50% - 6px)` , ease: Power4.easeOut})
-    .fromTo(reactBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(80% - 6px)` , ease: Power4.easeOut})
+t1.fromTo(androidBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(70% - 6px)` , ease: Power4.easeOut})
+    .fromTo(unityBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(60% - 6px)` , ease: Power4.easeOut})
+    .fromTo(htmlBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(50% - 6px)` , ease: Power4.easeOut})
+    .fromTo(designBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(80% - 6px)` , ease: Power4.easeOut})
 
 const controller = new ScrollMagic.Controller()
 const scene = new ScrollMagic.Scene({
